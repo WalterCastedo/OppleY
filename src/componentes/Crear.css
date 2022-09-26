@@ -1,0 +1,9 @@
+.todo{
+    margin-inline: 30%;
+}
+
+@media (max-width: 950px) {
+    .todo{
+        margin-inline: 10%;
+    }
+  }

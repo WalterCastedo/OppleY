@@ -1,0 +1,73 @@
+table , td, tr {
+	
+	align-items: center;
+	align-self: center;
+	align-content: center;
+	width: 604px;
+}
+#pdf{
+	font-family: Arial;
+	width: 608px;
+	
+	font-size: 4px;
+	margin-inline: 4px;
+
+	margin-top: 10px;
+	
+	
+}
+.ocultar{
+	display: none
+}
+
+#pdf table td{
+	border: 0.3px solid rgb(0, 0, 0);
+	
+}
+
+td{
+	padding: 2px;
+	padding-block: 3px;
+}
+
+#logo{
+
+	height: 130px;
+	
+	
+}
+
+.detalle{
+	width: 40%;
+	
+}
+.item{
+	width: 6%;
+}
+.codigo{
+	width: 7%;
+}
+.cantidad{
+	width: 8%;
+}
+
+.nit{width: 13%;}
+.cliente{width: 48%;}
+#gerente{
+	background-color: #afccff;
+}
+.datos{
+	width: 61%;
+}
+#fondo{background-color: #164ba0;}
+#fondoBlanco{background-color: #ffffff;}
+.fondoBlanco{background: #ffffff;}
+#crear{
+	margin-inline: 100px;
+}
+
+@media (max-width: 550px) {
+    #crear{
+		margin-inline: 10px;
+	}
+  }
