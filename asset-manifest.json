@@ -1,0 +1,22 @@
+{
+  "files": {
+    "main.css": "/OppleY/static/css/main.45ee7f2b.css",
+    "main.js": "/OppleY/static/js/main.cba52d69.js",
+    "static/js/498.db2d3801.chunk.js": "/OppleY/static/js/498.db2d3801.chunk.js",
+    "static/js/703.1aa856e0.chunk.js": "/OppleY/static/js/703.1aa856e0.chunk.js",
+    "static/js/541.70b5998b.chunk.js": "/OppleY/static/js/541.70b5998b.chunk.js",
+    "static/js/787.bde37421.chunk.js": "/OppleY/static/js/787.bde37421.chunk.js",
+    "static/media/logo2.png": "/OppleY/static/media/logo2.19ed6452633b605f77ee.png",
+    "index.html": "/OppleY/index.html",
+    "main.45ee7f2b.css.map": "/OppleY/static/css/main.45ee7f2b.css.map",
+    "main.cba52d69.js.map": "/OppleY/static/js/main.cba52d69.js.map",
+    "498.db2d3801.chunk.js.map": "/OppleY/static/js/498.db2d3801.chunk.js.map",
+    "703.1aa856e0.chunk.js.map": "/OppleY/static/js/703.1aa856e0.chunk.js.map",
+    "541.70b5998b.chunk.js.map": "/OppleY/static/js/541.70b5998b.chunk.js.map",
+    "787.bde37421.chunk.js.map": "/OppleY/static/js/787.bde37421.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.45ee7f2b.css",
+    "static/js/main.cba52d69.js"
+  ]
+}
