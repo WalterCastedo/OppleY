@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/OppleY/static/css/main.c811dc37.css",
-    "main.js": "/OppleY/static/js/main.b27abd51.js",
+    "main.js": "/OppleY/static/js/main.3dbee3f0.js",
     "static/js/498.db2d3801.chunk.js": "/OppleY/static/js/498.db2d3801.chunk.js",
     "static/js/703.1aa856e0.chunk.js": "/OppleY/static/js/703.1aa856e0.chunk.js",
     "static/js/541.70b5998b.chunk.js": "/OppleY/static/js/541.70b5998b.chunk.js",
@@ -9,7 +9,7 @@
     "static/media/logo2.png": "/OppleY/static/media/logo2.19ed6452633b605f77ee.png",
     "index.html": "/OppleY/index.html",
     "main.c811dc37.css.map": "/OppleY/static/css/main.c811dc37.css.map",
-    "main.b27abd51.js.map": "/OppleY/static/js/main.b27abd51.js.map",
+    "main.3dbee3f0.js.map": "/OppleY/static/js/main.3dbee3f0.js.map",
     "498.db2d3801.chunk.js.map": "/OppleY/static/js/498.db2d3801.chunk.js.map",
     "703.1aa856e0.chunk.js.map": "/OppleY/static/js/703.1aa856e0.chunk.js.map",
     "541.70b5998b.chunk.js.map": "/OppleY/static/js/541.70b5998b.chunk.js.map",
@@ -17,6 +17,6 @@
   },
   "entrypoints": [
     "static/css/main.c811dc37.css",
-    "static/js/main.b27abd51.js"
+    "static/js/main.3dbee3f0.js"
   ]
 }
