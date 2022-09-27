@@ -88,9 +88,9 @@ const datos =()=> {
   
 
   const r=() => {
-    
-    if(resultado!=null){
-        
+   
+    if(resultado!=null && selectedValue!==undefined && selectedValue!==null && selectedValue!=='' ){
+       
       return(
       resultado.map(
         valores=>(
@@ -109,7 +109,7 @@ const datos =()=> {
         {
             tipo==='' || tipo===null || tipo===undefined ? <div>Selecciona un tipo de precio</div> : 
             <div>
-                <input  placeholder='ingresa un producto'
+                <input className='col-12' placeholder='ingresa un producto'
         list='pro'
         onChange={e => setSelectedValue(e.target.value)} />
         <datalist id="pro">
@@ -120,7 +120,6 @@ const datos =()=> {
     
   <p className='fs-6'> Detalle: {selectedNombre}</p>
   <div className='row'>
-
   <p className='col-lg-4 col-sm-12'> Cantidad:<input className='w-50' type="number" onChange={e => setCantidad(e.target.value)}/></p>
   <p className='col-lg-4 col-sm-12'>Precio {tipo} : {tipo==='mayorista' ? precioM : tipo==='minorista' ? preciom : preciod} Bs.</p>
   <p className='col-lg-4 col-sm-12'>total: {total} Bs.</p>

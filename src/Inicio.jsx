@@ -1,12 +1,12 @@
 import React ,{useEffect,useState,useCallback, useRef } from 'react';
 import { Seleccionador1} from './componentes/Seleccionador1';
-import jsPDF from 'jspdf';
+
 import 'jspdf-autotable'
 import './Inicio.css'
 import logo from './logo.png'
 import logo2 from './logo2.png'
 
-import { toJpeg } from 'html-to-image';
+import { toPng } from 'html-to-image';
 
 
 
@@ -18,17 +18,16 @@ export function Inicio() {
     if (ref.current === null) {
       return
     }
-
-       toJpeg(ref.current, { cacheBust: true, backgroundColor:'white' })
+    var intro = document.getElementById('ocultar');
+    intro.className = '';
+       toPng(ref.current, { cacheBust: true, backgroundColor:'white' })
       .then((dataUrl) => {
         const link = document.createElement('a')
-        link.download = 'my-image-name.jpeg'
+        link.download = 'my-image-name.png'
         link.href = dataUrl
-        console.log(link)
         link.click()
 
-         
-       
+        intro.className = 'ocultar';
       })
       .catch((err) => {
         console.log(err)
@@ -242,22 +241,22 @@ var year = today.getFullYear();
 
           
           <div className="row">
-          <div className='col-lg-6 col-sm-12'>
+          <div className='col-sm-12'>
           <Seleccionador1  resultado={resultado}  tot={setT1} can={setC1} pro={setP1} tipo={tipo} cod={setCod1} pre={setPre1}  />  
           </div>
-          <div className='col-lg-6 col-sm-12'>
+          <div className='col-sm-12'>
           <Seleccionador1 resultado={resultado}  tot={setT2} can={setC2} pro={setP2} tipo={tipo} cod={setCod2} pre={setPre2} />
           </div>
-          <div className='col-lg-6 col-sm-12'>
+          <div className='col-sm-12'>
           <Seleccionador1 resultado={resultado}  tot={setT3} can={setC3} pro={setP3} tipo={tipo} cod={setCod3} pre={setPre3}/>
           </div>
-          <div className='col-lg-6 col-sm-12'>
+          <div className='col-sm-12'>
           <Seleccionador1 resultado={resultado}  tot={setT4} can={setC4} pro={setP4} tipo={tipo} cod={setCod4} pre={setPre4}/>
           </div>
-          <div className='col-lg-6 col-sm-12'>
+          <div className='col-sm-12'>
           <Seleccionador1 resultado={resultado} tot={setT5} can={setC5} pro={setP5} tipo={tipo} cod={setCod5} pre={setPre5}/>
           </div>
-          <div className='col-lg-6 col-sm-12'>
+          <div className='col-sm-12'>
           <Seleccionador1 resultado={resultado} tot={setT6} can={setC6} pro={setP6} tipo={tipo} cod={setCod6} pre={setPre6}/>
           </div>
         
@@ -265,7 +264,7 @@ var year = today.getFullYear();
 <br />
           <div className='row' id='crear' align='center'>
           <p className='col-md-3 col-sm-12'>total:{totalf}</p>
-            <p className='col-md-3 col-sm-12'> porcentaje de descuento: <input min="0" max="100" step="1" type="number" onChange={e => setDescuento(e.target.value)}/> = {(Math.round((porcentaje + Number.EPSILON) * 100) / 100)} Bs.</p>
+            <p className='col-md-3 col-sm-12'> % de descuento: <input min="0" max="100" step="1" type="number" onChange={e => setDescuento(e.target.value)}/> = {(Math.round((porcentaje + Number.EPSILON) * 100) / 100)} Bs.</p>
             <p className='col-md-3 col-sm-12'>total Final:{(Math.round((totalfinal+ Number.EPSILON) * 100) / 100)}</p>
             <button className='col-md-3 col-sm-12 btn btn-primary' onClick={onButtonClick}>Crear pdf</button>
             
@@ -292,7 +291,7 @@ var year = today.getFullYear();
 
 
 
-        <div className=''>
+        <div id='ocultar' className='ocultar'>
         <div name='fondoBlanco'id='pdf' ref={ref} >
         <br id='fondoBlanco' />
         <br id='fondoBlanco' />
@@ -447,7 +446,7 @@ var year = today.getFullYear();
 			<td id='fondo' colSpan="10" rowSpan="4"><img src={logo2} alt="description of image"/></td>
 		</tr>
 		<tr>
-			<td className='fw-bold datos' colSpan="2">{vendedor==='' ? 'sin nombre' : vendedor}</td>
+			<td className='fw-bold datos' colSpan="2">{vendedor==='' ? 'Yuliza Pyttary' : vendedor}</td>
 		</tr>
 		<tr>
 			<td className='fw-bold datos' colSpan="2">{celular===''||celular==null ? '75637934' : celular}</td>
