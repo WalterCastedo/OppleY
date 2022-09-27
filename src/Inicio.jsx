@@ -313,7 +313,7 @@ var year = today.getFullYear();
 			<td className='nit' colSpan="2">{nit===''||nit===null ? 'Sin Espesificar' : nit}</td>
 			<td className='cliente'colSpan="7">{cliente===null||cliente==='' ? 'sin espesificar' : cliente}</td>
 			<td className='contacto'colSpan="1">{contacto===null||contacto==='' ? 'sin espesificar' : contacto}</td>
-			<td className='fecha'colSpan="1">{month}/{day}/{year}</td>
+			<td className='fecha'colSpan="1">{day}/{month}/{year}</td>
             <td className='ciudad'colSpan="1">Santa Cruz</td>
 		</tr>
 		<tr>
