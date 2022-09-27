@@ -241,22 +241,22 @@ var year = today.getFullYear();
 
           
           <div className="row">
-          <div className='col-sm-12'>
+          <div className='col-lg-6 col-sm-12'>
           <Seleccionador1  resultado={resultado}  tot={setT1} can={setC1} pro={setP1} tipo={tipo} cod={setCod1} pre={setPre1}  />  
           </div>
-          <div className='col-sm-12'>
+          <div className='col-lg-6 col-sm-12'>
           <Seleccionador1 resultado={resultado}  tot={setT2} can={setC2} pro={setP2} tipo={tipo} cod={setCod2} pre={setPre2} />
           </div>
-          <div className='col-sm-12'>
+          <div className='col-lg-6 col-sm-12'>
           <Seleccionador1 resultado={resultado}  tot={setT3} can={setC3} pro={setP3} tipo={tipo} cod={setCod3} pre={setPre3}/>
           </div>
-          <div className='col-sm-12'>
+          <div className='col-lg-6 col-sm-12'>
           <Seleccionador1 resultado={resultado}  tot={setT4} can={setC4} pro={setP4} tipo={tipo} cod={setCod4} pre={setPre4}/>
           </div>
-          <div className='col-sm-12'>
+          <div className='col-lg-6 col-sm-12'>
           <Seleccionador1 resultado={resultado} tot={setT5} can={setC5} pro={setP5} tipo={tipo} cod={setCod5} pre={setPre5}/>
           </div>
-          <div className='col-sm-12'>
+          <div className='col-lg-6 col-sm-12'>
           <Seleccionador1 resultado={resultado} tot={setT6} can={setC6} pro={setP6} tipo={tipo} cod={setCod6} pre={setPre6}/>
           </div>
         
