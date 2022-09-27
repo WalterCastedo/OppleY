@@ -3,17 +3,21 @@ table , td, tr {
 	align-items: center;
 	align-self: center;
 	align-content: center;
-	width: 604px;
+	width: 608px;
+}
+#tod{
+	width: 616px;
+	height: 700px;
+	
 }
 #pdf{
 	font-family: Arial;
-	width: 604px;
+	width: 608px;
 	
-	font-size: 4px;
+	font-size: 7px;
 
-
-	margin-top: 10px;
-	
+	margin-inline: 4px;
+	margin-bottom: 300px;
 	
 }
 .ocultar{

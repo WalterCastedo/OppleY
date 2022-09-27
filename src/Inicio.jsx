@@ -127,7 +127,7 @@ var year = today.getFullYear();
   }  
   useEffect(()=>{
    
-    setPorcentaje((descuento/100)*totalf)
+    setPorcentaje((Math.round((((descuento/100)*totalf)+ Number.EPSILON) * 100) / 100))
 
 
   },[descuento,totalf])
@@ -220,7 +220,7 @@ var year = today.getFullYear();
             Dirección <br /> <input  type="text" onChange={e => setDireccion(e.target.value)} />
             </div>
             <div className='col-lg-2 col-md-4'>
-            Email <br /> <input  type="number" onChange={e => setEmail(e.target.value)} />
+            Email <br /> <input  type="text" onChange={e => setEmail(e.target.value)} />
             </div>
             </div>
 
@@ -292,10 +292,11 @@ var year = today.getFullYear();
 
 
         <div id='ocultar' className='ocultar'>
-        <div name='fondoBlanco'id='pdf' ref={ref} >
+        <div id='tod' ref={ref}>
+        <div name='fondoBlanco'id='pdf'  >
         <br id='fondoBlanco' />
         <br id='fondoBlanco' />
-      
+     
         <table id='fondoBlanco' >
 	<tbody align='center'>
 		<tr>
@@ -462,7 +463,7 @@ var year = today.getFullYear();
 </table>
 
         </div>
-
+        </div>
         </div>
       </div>
       
